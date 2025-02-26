@@ -1,8 +1,8 @@
 import {Routes, Route } from 'react-router-dom'
-import SingleService from './pages/SingleService'
+import SingleService from './pages/service/SingleService'
 import Home from './pages/Home'
 import TestPage from './pages/TestPage'
-import Services from './pages/Services'
+import Services from './pages/service/Services'
 import ContactUs from './pages/ContactUs'
 import FaqPage from './pages/FaqPage'
 
