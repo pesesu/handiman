@@ -75,11 +75,11 @@ const SingleService = () => {
 
                 <div className="text-2xl text-white text-left font-semibold h-font mt-5">Overview</div>
 
-                <div className='text-base/7 text-gray-100 mt-3'>
+                <div className='text-[15px]/6 text-gray-100 mt-3'>
                   Provides reliable and professional electrical solutions for residential and commercial clients. Our licensed electricians are dedicated to delivering top-quality service, ensuring safety, and meeting all your electrical needs. Committed to providing high-quality electrical solutions with a focus on safety and customer satisfaction. Our team of licensed electricians is equipped to handle both residential and commercial projects with expertise and care.
                 </div>
                 <br />
-                <div className='text-base/7 text-gray-100'>
+                <div className='text-[15px/6 text-gray-100'>
                   Comprehensive overview of Electrical Services, including the types of services offered, key benefits, location, contact details, special offers, and customer reviews.
                 </div>
                 
