@@ -2,7 +2,7 @@ import React from 'react'
 
 const JobListingDetails = () => {
   return (
-    <div className='properties flex flex-col gap-5 text-[15px] mt-8 max-w-2xl'>
+    <div className='properties flex flex-col gap-5 text-[15px] mt-4 max-w-2xl'>
         <div className="flex gap-2">
             <div className='text-white font-semibold'>Job Title:</div>
             <div className='text-gray-200'>Frontend Developer</div>

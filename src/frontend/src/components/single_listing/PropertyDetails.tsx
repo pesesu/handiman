@@ -3,7 +3,7 @@ import React from 'react'
 const PropertyDetails = () => {
   return (
     <>
-        <div className='properties text-[15px] mt-8 max-w-2xl'>
+        <div className='properties text-[15px] mt-4 max-w-2xl'>
             <div className='grid sm:grid-cols-2 sm:gap-x-24 md:gap-x-32 gap-y-5'>
                 <div className="flex tems-center justify-between text-white">
                     <div className='text-gray-300 font-light'>Property Type</div>

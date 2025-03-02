@@ -59,7 +59,7 @@ const ImageGallery: React.FC<ProductGalleryProps> = ({images}) => {
         <img
           src={images[currentIndex]}
           alt={`Product ${currentIndex + 1}`}
-          className="w-full h-[18rem] md:h-[26rem] object-cover rounded-sm"
+          className="max-w-full h-[18rem] md:h-[26rem] object-cover rounded-sm mx-auto"
         />
         {/* Left Chevron on Main View */}
         <button
