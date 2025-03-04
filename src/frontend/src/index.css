@@ -129,8 +129,8 @@ body {
 
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
-  width: 16px !important;
-  height: 16 !important;
+  width: 4px !important;
+  height: 4px !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -149,7 +149,7 @@ body {
 /* Firefox */
 html {
   scrollbar-color: #2E3E4A #18212A;
-  scrollbar-width: 16px;
+  scrollbar-width: 4px !important;
 }
 
 .hero {

@@ -71,7 +71,7 @@ const SingleService = () => {
                 <div className='py-6'>
                   <ImageGallerySlider />
                 </div>
-                <Separator className='bg-[#2E3E4A] md:hidde' /> 
+                <Separator className='bg-[#2E3E4A]' /> 
 
                 <div className="text-2xl text-white text-left font-semibold h-font mt-5">Overview</div>
 

@@ -6,6 +6,7 @@ import Services from './pages/service/Services'
 import ContactUs from './pages/ContactUs'
 import FaqPage from './pages/FaqPage'
 import SingleListing from './pages/listing/SingleListing'
+import Listings from './pages/listing/Listings'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
 
         {/* Listing Specific */}
         <Route path='/listing/:id' element={<SingleListing />} />
-        {/* <Route path='/listings' element={<Listings />} /> */}
+        <Route path='/marketplace' element={<Listings />} />
 
         {/* Admin Specific */}
 

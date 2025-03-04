@@ -41,7 +41,7 @@ const SingleListing = () => {
     <div>
         <Header />
         <div className="mt-14">
-            <BreadcrumbHero title="Listing" subs={breadcrumbItems}  />  
+            <BreadcrumbHero title="Marketplace" subs={breadcrumbItems}  />  
         </div>
         <div className="content md:px-5 py-14">
             <div className="grid gap-y-5 lg:gap-x-16 lg:grid-cols-[1fr_24rem]">
