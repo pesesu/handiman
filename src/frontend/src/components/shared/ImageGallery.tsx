@@ -64,7 +64,7 @@ const ImageGallery: React.FC<ProductGalleryProps> = ({images}) => {
         {/* Left Chevron on Main View */}
         <button
           onClick={handlePrev}
-          className="cursor-pointer absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 hover:bg-opacity-75 text-white z-[4] rounded-lg hover:bg-[#AFDE74]"
+          className="cursor-pointer absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-[#30303B]/80 bg-opacity-50 hover:bg-opacity-75 text-white z-[4] rounded-lg hover:bg-[#0092FF]"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -73,7 +73,7 @@ const ImageGallery: React.FC<ProductGalleryProps> = ({images}) => {
         {/* Right Chevron on Main View */}
         <button
           onClick={handleNext}
-          className="cursor-pointer absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-700 bg-opacity-50 hover:bg-opacity-75 text-white z-[4] rounded-lg hover:bg-[#AFDE74]"
+          className="cursor-pointer absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-[#30303B]/80 bg-opacity-50 hover:bg-opacity-75 text-white z-[4] rounded-lg hover:bg-[#0092FF]"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -81,7 +81,7 @@ const ImageGallery: React.FC<ProductGalleryProps> = ({images}) => {
         </button>
         {/* Hover Overlay on Main View */}
         <div onClick={openModal} className="group absolute inset-0 flex items-center justify-center cursor-pointer hover:bg-white/40 transition-opacity">
-          <div className="group-hover:bg-black/60 text-white/0 group-hover:text-white px-4 py-2 rounded">
+          <div className="group-hover:bg-black/70 text-white/0 group-hover:text-white px-4 py-2 rounded">
             Click to view fullscreen
           </div>
         </div>

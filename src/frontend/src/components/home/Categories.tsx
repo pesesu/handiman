@@ -42,7 +42,7 @@ export default function App() {
         {/* Left Chevron Button */}
         <button
           ref={prevRef}
-          className="hidden md:block absolute left-[-16px] top-1/2 transform -translate-y-1/2 z-[5] p-1 bg-[#405461] rounded-full shadow-md hover:bg-[#1EA54C]"
+          className="hidden md:block absolute left-[-16px] top-1/2 transform -translate-y-1/2 z-[5] p-1 bg-[#30303B] rounded-full shadow-md hover:bg-[#0092FF]"
         >
           <ChevronLeftIcon className="h-6 w-6 text-gray-200" />
         </button>
@@ -50,7 +50,7 @@ export default function App() {
         {/* Right Chevron Button */}
         <button
           ref={nextRef}
-          className="hidden md:block absolute right-[-16px] top-1/2 transform -translate-y-1/2 z-[5] p-1 bg-[#405461] rounded-full shadow-md hover:bg-[#1EA54C]"
+          className="hidden md:block absolute right-[-16px] top-1/2 transform -translate-y-1/2 z-[5] p-1 bg-[#30303B] rounded-full shadow-md hover:bg-[#0092FF]"
         >
           <ChevronRightIcon className="h-6 w-6 text-gray-200" />
         </button>

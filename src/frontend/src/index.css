@@ -134,21 +134,21 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #18212A;
+  background: #30303B;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0f151a;
+  background: #4D5160;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #212e3b;
+  background: #424653;
 }
 
 /* Firefox */
 html {
-  scrollbar-color: #2E3E4A #18212A;
+  scrollbar-color: #4D5160 #30303B;
   scrollbar-width: 4px !important;
 }
 
@@ -181,7 +181,7 @@ html {
   position: relative;
   padding: 10px;
   background:
-  linear-gradient(#4D5160 , #4D5160) padding-box,
+  linear-gradient(#40434f , #40434f) padding-box,
   linear-gradient(160deg, #46acfa 3%, #94cbf5 67%) border-box;
   border: 1px solid transparent;
 }
