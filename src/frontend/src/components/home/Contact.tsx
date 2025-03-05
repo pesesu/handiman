@@ -3,24 +3,24 @@ import { MapPinIcon } from "@heroicons/react/24/outline"
 
 const Contact = () => {
   return (
-    <section className="py-12 bg-[#1D2934] border-t border-[#2E3E4A]">
-        <div className="mx-auto max-w-7xl px-2 md:px-5">
+    <section className="py-12 bg-[#101218]">
+        <div className="mx-auto max-w-7xl px-4 md:px-5">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
             <div className="flex items-center lg:mb-0 mb-10">
               <div>
-                <h4 className="text-[#AFDE74] text-base font-medium leading-6 mb-4 lg:text-left text-center">Contact Us</h4>
+                <h4 className="text-[#37a4f8] text-base font-medium leading-6 mb-4 lg:text-left text-center">Contact Us</h4>
                 <h2 className="text-white font-manrope text-4xl font-semibold leading-10 mb-9 lg:text-left text-center">Reach Out To Us</h2>
                 <form>
-                  <input type="text" className="w-full h-14 shadow-sm text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#3c4c58] focus:outline-none py-2 px-4 mb-8" placeholder="Name" />
-                  <input type="email" className="w-full h-14 shadow-sm text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#3c4c58] focus:outline-none py-2 px-4 mb-8" placeholder="Email" />
-                  <textarea id="text" className="w-full h-48 shadow-sm resize-none text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#3c4c58] focus:outline-none px-4 py-4 mb-8" placeholder="Phone" defaultValue={""} />
-                  <button className="w-full h-12 text-center text-base font-semibold leading-6 rounded-lg text-[#223841] bg-[#afde74] hover:bg-[#91c255] shadow transition-all duration-700">Submit</button>
+                  <input type="text" className="w-full h-14 shadow-sm text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#4D5160] focus:outline-none py-2 px-4 mb-8" placeholder="Name" />
+                  <input type="email" className="w-full h-14 shadow-sm text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#4D5160] focus:outline-none py-2 px-4 mb-8" placeholder="Email" />
+                  <textarea id="text" className="w-full h-48 shadow-sm resize-none text-gray-100 placeholder-white/50 text-lg font-normal leading-7 rounded-lg border border-[#4D5160] focus:outline-none px-4 py-4 mb-8" placeholder="Phone" defaultValue={""} />
+                  <button className="w-full h-12 text-center text-base font-semibold leading-6 rounded-lg text-white bg-[#0092FF] hover:bg-[#027cda] shadow transition-all duration-700">Submit</button>
                 </form>
               </div>
             </div>
-            <div className="lg:max-w-xl w-full h-[600px] flex items-center justify-center rounded-[4px] bg-cover bg-no-repeat bg-[url('https://www.edgeip.com/images/FCK/Image/202303/SFG-HowtoBecome-Welder.jpg')] ">
+            <div className="lg:max-w-xl w-full h-[600px] flex items-center justify-center rounded-5xl overflow-hidden bg-cover bg-no-repeat bg-[url('https://assets.marketing.quickbase.com/blog/_1320x861_crop_center-center_82_line/blog-images-construction-management.jpg')] ">
               <div>
-                <div className="lg:w-96 w-auto h-auto bg-[#1D2934] shadow-xl lg:p-6 p-4">
+                <div className="lg:w-96 w-auto h-auto bg-[#101218]/80 shadow-xl lg:p-6 p-4 rounded-[4px]">
                   <div className="flex justify-center mb-6">
                     <div className="brand">
                             {/* <img src="logo.png" alt="Logo" /> */}
@@ -32,14 +32,14 @@ const Contact = () => {
                     <h5 className="text-white text-base font-normal leading-6 ml-5">470-601-1911</h5>
                   </a>
                   <a href="javascript:;" className="flex items-center mb-6">
-                  <Mail className='w-[30px] h-[30px] text-white' />
+                    <Mail className='w-[30px] h-[30px] text-white' />
                     <h5 className="text-white text-base font-normal leading-6 ml-5">Pagedone1234@gmail.com</h5>
                   </a>
                   <a href="javascript:;" className="flex items-center mb-6">
                     <MapPinIcon className='w-[30px] h-[30px] text-white' />
                     <h5 className="text-white text-base font-normal leading-6 ml-5">789 Oak Lane, Lakeside, TX 54321</h5>
                   </a>
-                  <div className="flex items-center justify-center border-t border-[#2E3E4A] pt-6 rounded-[4px]">
+                  <div className="flex items-center justify-center border-t border-[#292C32] pt-6 rounded-[4px]">
                     <a href="javascript:;" className="mr-6">
                       <svg width={31} height={30} viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.0683594" width={30} height={30} rx={15} fill="#337FFF" />

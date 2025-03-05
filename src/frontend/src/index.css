@@ -116,7 +116,7 @@ body {
   /* font-family: "Lato", sans-serif; */
   font-family: "Archivo", sans-serif;
   /* font-family: "Inter", sans-serif; */
-  background: #26323C;
+  background: #101218;
   overflow: auto;
 }
 
@@ -171,19 +171,18 @@ html {
 }
 
 .featured-services {
-  /* background-color: white; */
   background-image: 
-    linear-gradient(#1D2934 1px, transparent 1px), 
-    linear-gradient(90deg, #1D2934 1px, transparent 1px);
-  background-size: 8px 8px; /* Adjust box size */
+    linear-gradient(#4D5160 1px, transparent 1px), 
+    linear-gradient(90deg, #4D5160 1px, transparent 1px);
+  background-size: 80px 80px; 
 }
 
 .gradient-border {
   position: relative;
   padding: 10px;
   background:
-  linear-gradient(#2E3E4A, #2E3E4A) padding-box,
-  linear-gradient(160deg, #AFDE74 3%, #ffdd82 67%) border-box;
+  linear-gradient(#4D5160 , #4D5160) padding-box,
+  linear-gradient(160deg, #46acfa 3%, #94cbf5 67%) border-box;
   border: 1px solid transparent;
 }
 

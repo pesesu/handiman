@@ -31,7 +31,7 @@ const staggerContainer = {
 const HeroMotion = () => {
   return (
     <motion.div
-      className="hero px-3 md:px-5  md:py-20 md:gap-10 h-[100vh] relative"
+      className="her bg-[#101218] px-4 md:px-5  md:py-20 md:gap-10 h-[100vh] relative"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}
@@ -53,12 +53,12 @@ const HeroMotion = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-            Find Products & Services <span className="text-[#AFDE74] font-[300] md:font-thin">Near You</span>
+            Find Products & Services <span className="">Near You</span>
           </motion.div>
         </motion.div>
         <motion.div className="hidden hero-texts flex flex-col justify-center items-center gap-10 md:gap-6 text-center" variants={fadeInUp}>
           <motion.div
-            className="text-4xl font-bold h-font leading-12 bg-gradient-to-r from-[#afde74] to-[#28cb5e] text-transparent bg-clip-text bg-[length:200%_200%]"
+            className="text-4xl font-bold h-font leading-12 bg-[#101218]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -71,14 +71,14 @@ const HeroMotion = () => {
         {/* Animated Search Section */}
         <motion.div className="searh w-full" variants={fadeInUp}>
           <Tabs defaultValue="service" className="w-full flex flex-col justify-center items-center gap-9 md:gap-10">
-            <TabsList className="bg-[#242422]">
-              <TabsTrigger className="data-[state=active]:bg-[#2E3E4A] data-[state=active]:text-white text-[#FFFFFF]/70" value="service">
+            <TabsList className="bg-[#30303b]">
+              <TabsTrigger className="data-[state=active]:bg-[#4D5160] data-[state=active]:text-white text-[#FFFFFF]/70" value="service">
                 Service
               </TabsTrigger>
-              <TabsTrigger className="data-[state=active]:bg-[#2E3E4A] data-[state=active]:text-white text-[#FFFFFF]/70" value="product">
+              <TabsTrigger className="data-[state=active]:bg-[#4D5160] data-[state=active]:text-white text-[#FFFFFF]/70" value="product">
                 Marketplace
               </TabsTrigger>
-              <TabsTrigger className="data-[state=active]:bg-[#2E3E4A] data-[state=active]:text-white text-[#FFFFFF]/70" value="provider">
+              <TabsTrigger className="data-[state=active]:bg-[#4D5160] data-[state=active]:text-white text-[#FFFFFF]/70" value="provider">
                 Provider
               </TabsTrigger>
             </TabsList>
@@ -88,7 +88,7 @@ const HeroMotion = () => {
               <motion.div className="flex justify-center" variants={fadeInUp}>
                 <div className="flex w-full md:max-w-[50rem] md:gap-10 items-center md:px-10">
                   <motion.div
-                    className="servic-search flex items-center justify-center w-full bg-[#18212a] rounded-xl px-5 h-12"
+                    className="servic-search flex items-center justify-center w-full bg-[#4D5160] rounded-xl px-5 h-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -102,7 +102,7 @@ const HeroMotion = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                   >
-                    <Button className="text-[#223841] bg-[#afde74] hover:bg-[#91c255] rounded-lg h-[44px] px-3 font-semibold">
+                    <Button className="text-white bg-[#0092FF] hover:bg-[#027cda] rounded-lg h-[44px] px-3 font-semibold">
                       Search
                     </Button>
                   </motion.div>
@@ -114,7 +114,7 @@ const HeroMotion = () => {
               <motion.div className="flex justify-center" variants={fadeInUp}>
                 <div className="flex w-full md:max-w-[50rem] md:gap-10 items-center md:px-10">
                   <motion.div
-                    className="servic-search flex items-center justify-center w-full bg-[#18212a] rounded-xl px-5 h-12"
+                    className="servic-search flex items-center justify-center w-full bg-[#4D5160] rounded-xl px-5 h-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -128,7 +128,7 @@ const HeroMotion = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                   >
-                    <Button className="text-[#223841] bg-[#afde74] hover:bg-[#91c255] rounded-lg h-[44px] px-3 font-semibold">
+                    <Button className="text-white bg-[#0092FF] hover:bg-[#027cda] rounded-lg h-[44px] px-3 font-semibold">
                       Search
                     </Button>
                   </motion.div>
@@ -140,7 +140,7 @@ const HeroMotion = () => {
               <motion.div className="flex justify-center" variants={fadeInUp}>
                 <div className="flex w-full md:max-w-[50rem] md:gap-10 items-center md:px-10">
                   <motion.div
-                    className="servic-search flex items-center justify-center w-full bg-[#18212a] rounded-xl px-5 h-12"
+                    className="servic-search flex items-center justify-center w-full bg-[#4D5160] rounded-xl px-5 h-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -154,7 +154,7 @@ const HeroMotion = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                   >
-                    <Button className="text-[#223841] bg-[#afde74] hover:bg-[#91c255] rounded-lg h-[44px] px-3 font-semibold">
+                    <Button className="text-white bg-[#0092FF] hover:bg-[#027cda] rounded-lg h-[44px] px-3 font-semibold">
                       Search
                     </Button>
                   </motion.div>

@@ -4,7 +4,7 @@ interface ListingCardProps {
     item: {
         distance: number,
         image: string,
-        name: string,
+        title: string,
         price: string,
         description: string,
         state: string,

@@ -55,7 +55,7 @@ const ImageGallery: React.FC<ProductGalleryProps> = ({images}) => {
   return (
     <div className="w-full">
       {/* Main Image Container */}
-      <div className="relative group">
+      <div className="relative group bg-[#17191F] rounded-lg">
         <img
           src={images[currentIndex]}
           alt={`Product ${currentIndex + 1}`}

@@ -80,7 +80,7 @@ const Services = () => {
         <div className="grid lg:grid-cols-[16rem_1fr] gap-5 px-4 lg:px-5 py-16">
             <div>
               <StickyBox offsetTop={78} offsetBottom={20} className="w-full">
-                <div className="filter shrink-none grow-none w-full lg:w-[16rem] px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)]">
+                <div className="filter shrink-none grow-none w-full lg:w-[16rem] px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] border border-[#272A31]">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-1">
                             <Filter className='w-8 h-8 text-white'/>
@@ -88,19 +88,19 @@ const Services = () => {
                         </div>
                         <div className='text-lg text-white cursor-pointer'>Reset Filter</div>
                     </div>
-                    <Separator className='bg-[#3c4c58] mt-4' />
+                    <Separator className='bg-[#272A31] mt-4' />
                     <div className="flex flex-col gap-3 text-white mt-5">
                         <Label htmlFor="email">Search By Keyword</Label>
-                        <Input className='text-sm !placeholder-white/50 border-[#5a6670]' type="email" placeholder="What are you looking for" />
+                        <Input className='text-sm !placeholder-white/50 border-gray-50' type="email" placeholder="What are you looking for" />
                     </div>
-                    <Separator className='bg-[#3c4c58] mt-6' />
+                    <Separator className='bg-[#272A31] mt-6' />
                     <div className="flex flex-col gap-3 text-white mt-6">
                         <Label htmlFor="email">Categories</Label>
                         {/* <Select value={selectedValues.join(", ")} onValueChange={handleSelect}>
-                            <SelectTrigger className="w-[180px] !text-white/50 border-[#5a6670] w-full">
+                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-50 w-full">
                                 <SelectValue placeholder="Theme" />
                             </SelectTrigger>
-                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-[#5a6670]'>
+                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-50'>
                                 <SelectItem value="light">Light</SelectItem>
                                 <SelectItem value="dark">Dark</SelectItem>
                                 <SelectItem value="system">System</SelectItem>
@@ -111,10 +111,10 @@ const Services = () => {
                     <div className="flex flex-col gap-3 text-white mt-5">
                         <Label htmlFor="email">Sub Category</Label>
                         <Select>
-                            <SelectTrigger className="w-[180px] !text-white/50 border-[#5a6670] w-full">
+                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-50 w-full">
                                 <SelectValue placeholder="Theme" />
                             </SelectTrigger>
-                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-[#5a6670]'>
+                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-50'>
                                 <SelectItem value="light">Light</SelectItem>
                                 <SelectItem value="dark">Dark</SelectItem>
                                 <SelectItem value="system">System</SelectItem>
@@ -128,7 +128,7 @@ const Services = () => {
                             </SelectContent>
                         </Select>
                     </div>
-                    {/* <Separator className='bg-[#3c4c58] mt-6' /> */}
+                    {/* <Separator className='bg-[#272A31] mt-6' /> */}
                   
                 </div>
               </StickyBox>

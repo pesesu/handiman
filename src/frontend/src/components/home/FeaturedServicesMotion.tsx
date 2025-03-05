@@ -18,7 +18,7 @@ const FeaturedServicesMotion = () => {
 
   return (
     <motion.div 
-      className='featured-services py-12 px-3 md:px-5 bg-[#26323C]'
+      className='featured-servicess py-12 px-4 md:px-5 bg-[#101218]'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -39,7 +39,7 @@ const FeaturedServicesMotion = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <Button className='text-xs text-[#afde74] hover:text-[#223841] bg-transparent hover:bg-[#afde74] border-[#afde74] rounded-lg px-3 font-semibold' variant="outline">
+          <Button className='text-xs text-[#0092FF] hover:text-[#101218] bg-transparent hover:bg-[#0092FF] border-[#0092FF] rounded-lg px-3 font-semibold' variant="outline">
             View All
           </Button>
         </motion.div>
@@ -47,7 +47,7 @@ const FeaturedServicesMotion = () => {
 
       {/* Cards Grid */}
       <motion.div 
-        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

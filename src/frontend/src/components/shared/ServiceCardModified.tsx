@@ -19,7 +19,7 @@ interface ServiceProps {
 
 const ServiceCardModified: React.FC<ServiceProps> = ({service, key}) => {
   return (
-    <div className="service-card-default rounded-lg overflow-hidden bg-[#1E294] shadow-[0_0px_5px_rgba(9,11,12,.4)]">
+    <div className="service-card-default rounded-lg overflow-hidden bg-[#1E294] shadow-[0_0px_5px_rgba(9,11,12,.4)] border border-[#272A31]">
         <div className="det px-2 py-3">
             <div className="flex justify-between gap-2 text-white">
                 <div className="flex items-center gap-1">
@@ -38,7 +38,7 @@ const ServiceCardModified: React.FC<ServiceProps> = ({service, key}) => {
                     <p className="text-sm text-white">{service.provider.first_name} {service.provider.last_name}</p>
                 </div>
             </div>
-            <div className="text-sm shadow-sm text-white/90 px-[6px] py-[6px] rounded-lg bg-[#2E3E4A] leading-5 tracking-wide">{service.category}</div>
+            <div className="text-sm shadow-sm text-white/90 px-[6px] py-[6px] rounded-lg bg-[#30303B] leading-5 tracking-wide">{service.category}</div>
         </div>
         
     </div>

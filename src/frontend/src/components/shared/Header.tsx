@@ -11,12 +11,12 @@ import Sidebar from './navbar/Sidebar'
 
 const Header: React.FC = () => {
     const [activeDrawer, setActiveDrawer] = useState("")
-    const [showSidebar, setShowSidebar] = useState(true)
+    const [showSidebar, setShowSidebar] = useState(false)
 
   return (
     <>
         <Sidebar isOpen={showSidebar} setShowSidebar={setShowSidebar} />
-        <div className='h-14 px-3 ms:px-5 flex items-center justify-between bg-[#26323C] w-full fixed top-0 z-[10]'>
+        <div className='h-14 px-4 md:px-5 flex items-center justify-between bg-[#101218] w-full fixed top-0 z-[10]'>
             <div className="left flex items-center gap-3">
                 <Menu onClick={() => setShowSidebar(true)} className='text-white' />
                 <div className="brand">
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
                     </div>
                     <div className="login-btn">
                         {/* <button className="text-white px-2 h-10 rounded-lg text-sm font-medium bg-[#1EA54C] hover:bg-[#14893b] transition-all">Create Listing</button> */}
-                        <Button className='text-[#223841] bg-[#afde74] hover:bg-[#91c255] rounded-lg px-3 font-semibold h-10'>Create listing</Button>
+                        <Button className='text-white bg-[#0092FF] hover:bg-[#027cda] rounded-lg px-3 font-semibold h-10'>Create listing</Button>
                     </div>
                 </div>
             </div>

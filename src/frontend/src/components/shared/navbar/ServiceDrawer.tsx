@@ -25,16 +25,16 @@ const ServiceDrawer: React.FC<ServiceDrawerProps> = ({isActive, setActiveDrawer}
   return (
     <>
     {
-        active && <div onMouseOver={() => setActiveDrawer('services')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-[#26323C] shadow-lg hidden md:block">
+        active && <div onMouseOver={() => setActiveDrawer('services')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-white shadow-lg hidden md:block">
 
             <div className="grid grid-cols-2 gap-2 max-w-5xl">
-                <div className='md:border-r md:border-gray-400 md:pr-5'>
-                    <div className="text-lg text-white font-bold">Services</div>
-                    <div className='w-full h-[1px] bg-gray-400 mt-3 max-w-[16rem]' />
+                <div className='md:border-r md:border-gray-300 md:pr-5'>
+                    <div className="text-lg text-gray-900 font-bold">Services</div>
+                    <div className='w-full h-[1px] bg-gray-300 mt-3 max-w-[16rem]' />
                     <div className="grid md:grid-cols-2 gap-x-5 gap-y-6 text-sm font-medium mt-8 max-h-[65vh] overflow-auto">
                     
                         {serviceCategories.map((item, index) => {
-                            return <div onClick={() => onCategoryClick(item.name, index)} className={`cursor-pointer !hover:text-[#AFDE74] ${index === activeIndex ? 'text-[#AFDE74]' : 'text-gray-100'}`} key={index} >{item.name}</div>
+                            return <div onClick={() => onCategoryClick(item.name, index)} className={`cursor-pointer text-gray-700 !hover:text-gray-600 ${index === activeIndex ? 'text-[#AFDE74]' : 'text-gray-600'}`} key={index} >{item.name}</div>
                         })}
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const ServiceDrawer: React.FC<ServiceDrawerProps> = ({isActive, setActiveDrawer}
                 <div className='md:pl-5 max-h-[60vh] overflow-auto'>
                     <div className="grid md:grid-cols-2 gap-x-2 gap-y-6 text-sm font-medium mt-8">
                         {serviceCategories[activeIndex].subcategories.map((item, index) => {
-                            return <a href='#'><div onClick={() => setSubCategory(item)} className='text-gray-100 !hover:text-[#AFDE74]' key={index} >{item}</div></a>
+                            return <a href='#'><div onClick={() => setSubCategory(item)} className='text-gray-700 !hover:text-[#AFDE74]' key={index} >{item}</div></a>
                         })}
                     </div>
                 </div>

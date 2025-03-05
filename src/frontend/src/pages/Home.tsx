@@ -17,7 +17,7 @@ const Home = () => {
             <Separator className='bg-[#2E3E4A] md:hidde' /> 
             <CategorySlider />
             <FeaturedServicesMotion />
-            <Cta />
+            {/* <Cta /> */}
             <Contact />
             <Footer />
             <HomeDrawer />

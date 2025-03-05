@@ -65,11 +65,11 @@ const FancyMultiSelect: React.FC<FancyMultiSelectProps<OptionsProps>> = ({option
       onKeyDown={handleKeyDown}
       className="overflow-visible bg-transparent"
     >
-      <div className="group rounded-md border border-[#5a6670] px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+      <div className="group rounded-md border border-gray-50 px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
         <div className="flex flex-wrap gap-1">
           {selected.map((option) => {
             return (
-              <Badge className="bg-[#405461] text-gray-100" key={option.value} variant="secondary">
+              <Badge className="bg-[#30303B] text-gray-100" key={option.value} variant="secondary">
                 {option.label}
                 <button
                   className="ml-1 rounded-full outline-none ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2"
