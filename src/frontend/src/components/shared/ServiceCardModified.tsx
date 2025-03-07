@@ -19,7 +19,7 @@ interface ServiceProps {
 
 const ServiceCardModified: React.FC<ServiceProps> = ({service, key}) => {
   return (
-    <div className="service-card-default rounded-lg overflow-hidden bg-[#1E294] shadow-[0_0px_5px_rgba(9,11,12,.4)] border border-[#272A31]">
+    <div className="service-card-default rounded-lg overflow-hidden bg-[#1E294] shadow-[0_0px_5px_rgba(9,11,12,.4)] border-color">
         <div className="det px-2 py-3">
             <div className="flex justify-between gap-2 text-white">
                 <div className="flex items-center gap-1">
@@ -29,7 +29,7 @@ const ServiceCardModified: React.FC<ServiceProps> = ({service, key}) => {
                 <div className="text-sm text-white/90">{service.distance}/km away</div>
             </div>
         </div>
-        <img className='w-full object-cover h-[12rem] md:h-[8rem] px-2' src={service.image} alt="" />
+        <img className='w-full object-cover h-[11.5rem] md:h-[8rem] px-' src={service.image} alt="" />
         <h3 className="text-lg text-white font-[600] mt-2 px-2">{service.name}</h3>
         <div className="bottom px-2 pb-4 flex justify-between mt-2">
             <div className="provider-profile flex items-center gap-2">

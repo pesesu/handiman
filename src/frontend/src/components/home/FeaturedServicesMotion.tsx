@@ -2,6 +2,8 @@ import React from 'react';
 import { Button } from '../ui/button';
 import ServiceCardDefault from '../shared/ServiceCardDefault';
 import { motion } from 'framer-motion';
+import services from '@/contants/services';
+import ServiceCardModified from '../shared/ServiceCardModified';
 
 const FeaturedServicesMotion = () => {
   const defaultCard = Array.from({ length: 12 }, (_, index) => (
@@ -12,13 +14,13 @@ const FeaturedServicesMotion = () => {
       viewport={{ once: true }} // Ensures animation runs once when in view
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
-      <ServiceCardDefault />
+      {/* <ServiceCardDefault /> */}
     </motion.div>
   ));
 
   return (
     <motion.div 
-      className='featured-servicess py-12 px-4 md:px-5 bg-[#101218]'
+      className='featured-servicess  bg-[#0b0c10] py-12 px-3 md:px-5'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -47,7 +49,7 @@ const FeaturedServicesMotion = () => {
 
       {/* Cards Grid */}
       <motion.div 
-        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -56,7 +58,22 @@ const FeaturedServicesMotion = () => {
           visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
         }}
       >
-        {defaultCard}
+  
+      {services.map((service, i) => {
+        return (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: i * 0.1 }}
+          >
+            <ServiceCardDefault service={service} key={i} />
+            {/* <ServiceCardModified service={service} key={i} /> */}
+          </motion.div>
+        )
+      }) }
+       
       </motion.div>
     </motion.div>
   );

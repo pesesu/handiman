@@ -3,8 +3,8 @@ import { MapPinIcon } from "@heroicons/react/24/outline"
 
 const Contact = () => {
   return (
-    <section className="py-12 bg-[#101218]">
-        <div className="mx-auto max-w-7xl px-4 md:px-5">
+    <section className="py-12 bg-[#0b0c10]">
+        <div className="mx-auto max-w-7xl px-3 md:px-5">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
             <div className="flex items-center lg:mb-0 mb-10">
               <div>

@@ -21,7 +21,7 @@ interface BreadcrumbHeroProps {
 const BreadcrumbHero:React.FC<BreadcrumbHeroProps> = ({title, subs}) => {
   return (
     // #4f6931 #027476
-    <div className='flex flex-col gap-0 items-center justify-center h-40 md:h-36 bg-[#30303B]/40'>
+    <div className='flex flex-col gap-0 items-center justify-center h-40 md:h-36 bg-gradient-to-r from-[#3f424a]/7 via-[#3f424a]/25 to-[#3f424a]/7'>
         <div className="title text-[38px] text-white font-semibold tracking-wide">{title}</div>
         <Breadcrumb>
         <BreadcrumbList>

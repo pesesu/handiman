@@ -26,7 +26,7 @@ const MarketplaceDrawer: React.FC<MarketplaceDrawerProps> = ({isActive, setActiv
   return (
     <>
     {
-        active && <div onMouseOver={() => setActiveDrawer('marketplace')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-[#101218] shadow-lg hidden md:block">
+        active && <div onMouseOver={() => setActiveDrawer('marketplace')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-[#0b0c10] shadow-lg hidden md:block">
 
             <div className="grid grid-cols-2 gap-2 max-w-5xl">
                 <div className='md:border-r md:border-gray-400 md:pr-5'>

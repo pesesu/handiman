@@ -74,13 +74,18 @@ const Services = () => {
   return (
     <div>
         <Header />
-        <div className="mt-14">
-            <BreadcrumbHero title='Services' />
+        <div className="mt-16 flex items-center text-gray-300 gap-3 lg:justify-end pt-5 lg:pt-4 lg:pt-5 text-sm px-2 md:px-5">
+            {/* <BreadcrumbHero title='Services' /> */}
+          <div className='text-white'><a href="">Marketplace</a></div>
+          <div>/</div>
+          <div><a href="">Electronics</a></div>
+          <div>/</div>
+          <div><a href="">Television</a></div>
         </div>
-        <div className="grid lg:grid-cols-[16rem_1fr] gap-5 px-4 lg:px-5 py-16">
+        <div className="grid lg:grid-cols-[16rem_1fr] gap-y-8 lg:gap-3 px-2 lg:px-5 py-6 lg:py-6">
             <div>
               <StickyBox offsetTop={78} offsetBottom={20} className="w-full">
-                <div className="filter shrink-none grow-none w-full lg:w-[16rem] px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] border border-[#272A31]">
+                <div className="filter shrink-none grow-none w-full lg:w-[16rem] px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] border-color">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-1">
                             <Filter className='w-8 h-8 text-white'/>
@@ -88,19 +93,19 @@ const Services = () => {
                         </div>
                         <div className='text-lg text-white cursor-pointer'>Reset Filter</div>
                     </div>
-                    <Separator className='bg-[#272A31] mt-4' />
+                    <Separator className='bg-[#3f424a] mt-4' />
                     <div className="flex flex-col gap-3 text-white mt-5">
                         <Label htmlFor="email">Search By Keyword</Label>
-                        <Input className='text-sm !placeholder-white/50 border-gray-50' type="email" placeholder="What are you looking for" />
+                        <Input className='text-sm !placeholder-white/50 border-gray-500' type="email" placeholder="What are you looking for" />
                     </div>
-                    <Separator className='bg-[#272A31] mt-6' />
+                    <Separator className='bg-[#3f424a] mt-6' />
                     <div className="flex flex-col gap-3 text-white mt-6">
                         <Label htmlFor="email">Categories</Label>
                         {/* <Select value={selectedValues.join(", ")} onValueChange={handleSelect}>
-                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-50 w-full">
+                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-500 w-full">
                                 <SelectValue placeholder="Theme" />
                             </SelectTrigger>
-                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-50'>
+                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-500'>
                                 <SelectItem value="light">Light</SelectItem>
                                 <SelectItem value="dark">Dark</SelectItem>
                                 <SelectItem value="system">System</SelectItem>
@@ -111,10 +116,10 @@ const Services = () => {
                     <div className="flex flex-col gap-3 text-white mt-5">
                         <Label htmlFor="email">Sub Category</Label>
                         <Select>
-                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-50 w-full">
+                            <SelectTrigger className="w-[180px] !text-white/50 border-gray-500 w-full">
                                 <SelectValue placeholder="Theme" />
                             </SelectTrigger>
-                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-50'>
+                            <SelectContent className='max-h-[20rem] !overflow-auto text-white bg-[#26323C] border border-gray-500'>
                                 <SelectItem value="light">Light</SelectItem>
                                 <SelectItem value="dark">Dark</SelectItem>
                                 <SelectItem value="system">System</SelectItem>
@@ -128,13 +133,13 @@ const Services = () => {
                             </SelectContent>
                         </Select>
                     </div>
-                    {/* <Separator className='bg-[#272A31] mt-6' /> */}
+                    {/* <Separator className='bg-[#3f424a] mt-6' /> */}
                   
                 </div>
               </StickyBox>
             </div>
             <div>
-              <div className="services grid md:grid-cols-3 gap-4 md:gap-6">
+              <div className="services grid md:grid-cols-3 gap-3 md:gap-4">
               {
                 services.map((service, index) => {
                   return (

@@ -31,7 +31,7 @@ const staggerContainer = {
 const HeroMotion = () => {
   return (
     <motion.div
-      className="her bg-[#101218] px-4 md:px-5  md:py-20 md:gap-10 h-[100vh] relative"
+      className="her px-3 md:px-5  md:py-20 md:gap-10 h-[100vh] relative"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}

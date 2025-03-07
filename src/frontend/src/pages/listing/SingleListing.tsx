@@ -40,12 +40,12 @@ const SingleListing = () => {
   return (
     <div>
         <Header />
-        <div className="mt-14">
+        <div className="mt-16">
             <BreadcrumbHero title="Marketplace" subs={breadcrumbItems}  />  
         </div>
         <div className="content md:px-5 py-14">
-            <div className="grid gap-y-5 lg:gap-x-16 lg:grid-cols-[1fr_24rem]">
-                <div className="left px-4 py-4 lg:py-6 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full border border-[#272A31]">
+            <div className="grid gap-y-5 lg:gap-x-10 lg:grid-cols-[1fr_21rem]">
+                <div className="left px-4 md:px-5 py-4 lg:py-6 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full border border-[#292C32]">
                     <div className="flex justify-between mb-4 md:px-4 text-sm">
                         <div className="flex items-center gap-5 text-white">
                             <div>21 days ago</div>
@@ -60,12 +60,14 @@ const SingleListing = () => {
                             </div>
                         </div>
                     </div>
-                    <ImageGallery images={images} />
-                    <Separator className='bg-[#272A31] mt-4' />
+                    <div className="">
+                      <ImageGallery images={images} />
+                    </div>
+                    {/* <Separator className='bg-[#3f424a] mt-4' /> */}
                     <div className="title mt-4 text-2xl font-bold text-white"> 
                         Norman B20 acoustic- cheapest online !
                     </div>
-                    <div className="flex flex-col md:flex-row gap-4 md:justify-between items md:gap-2 mt-4">
+                    <div className="flex flex-col md:flex-row gap-4 lg:gap-8 items md:gap-2 mt-4">
                         <div className="flex items-center address text-white location">
                             <MapPinIcon className="h-4 w-4 text-white" />
                             <div>1234 Main Street, Lagos</div>
@@ -75,7 +77,8 @@ const SingleListing = () => {
                             <div className='text-sm font-bold text-[#0092FF] px-2 py-1 rounded-lg bg-[#0092FF]/20'>Promoted</div>   
                         </div>
                     </div>
-                    <Separator className='bg-[#272A31] mt-4' />
+                    {/* <Separator className='bg-[#3f424a] mt-4' /> */}
+                    <div className="mt-10"></div>
                     <div>
                         <div className="flex justify-between items-center mt-4 text-white/70 cursor-pointer">
                             <div className="text-white text-lg font-medium">Overview</div>
@@ -90,7 +93,8 @@ const SingleListing = () => {
                                 { !descriptionClose && <span className='text-sm'>Show Less...</span> }
                             </div>
                         </div>
-                        <Separator className='bg-[#272A31] mt-4' />
+                        {/* <Separator className='bg-[#3f424a] mt-4' /> */}
+                        <div className="mt-10"></div>
                         {showPropertyDetails && <PropertyDetails />}
                         {showVehicleDetails && <VehicleDetails />}
                         {showFashionDetails && <FashionDetails />}
@@ -98,8 +102,8 @@ const SingleListing = () => {
                         {furnitureListingDetails && <FurnitureListingDetails />}
                         {showBooksMediaDetails && <BooksMediaDetails />}
                         {showElectronicsDetails && <ElectronicsDetails />}
-                        <Separator className='bg-[#272A31] mt-4' />
-                        <div className="business mt-10 mb-2">
+                        {/* <Separator className='bg-[#3f424a] mt-8' /> */}
+                        <div className="business mt-12 mb-2">
                           <div className="text-white text-lg font-semibold">Store</div>
                           {/* <div className="text-white text-lg font-bold"><div>Business Info</div></div> */}
                           <div className='flex gap-5 text-white mt-3'>
@@ -116,111 +120,109 @@ const SingleListing = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="Service-provider px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base border border-[#272A31]">
+                    <div className="Service-provider px-4 lg:p-5 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base border border-[#292C32]">
                         {/* <div className="text-2xl text-white text-left font-semibold h-font">Service Actions</div> */}
                         <div className='py-1 flex justify-between'>
                             <div className="text-3xl text-white font-bold hidden lg:block">&#8358;<NumberFormatter value={30000} /></div>
-                            <a className='text-[#d7a31a] underline italic' href="">Read Reviews</a>
+                            <a className='text-[#d7a31a]' href="">Read Reviews</a>
                         </div>
-                        <Separator className='bg-[#272A31] mt-2' /> 
+                        <Separator className='bg-[#3f424a] mt-2' /> 
                         <div className='flex flex-col gap-4 mt-6'>
                           <Button className='text-white bg-[#0092FF] hover:bg-[#0092FF] rounded-lg px-3 font-semibold w-full h-[44px]'><Phone className='w-4 h-4'/>Call Seller</Button>
                           <Button className='text-white bg-transparent hover:bg-transparent border border-[#4D5160] rounded-lg px-3 font-semibold w-full h-[44px]'><Mail className='w-4 h-4' />Send Enquiry</Button>
                         </div>
                     </div>
-                    <div className="Service-provider px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base mt-7 border border-[#272A31]">
-                    <div className="flex items-center justify-between">
-                      <div className="text-2xl text-white text-left font-semibold h-font">Seller</div>
-                      <div className='text-[#FC323F] flex items-center gap-1 text-sm cursor-pointer px-3 py-[6px] rounded-lg border border-[#272A31]'>
-                        <Flag className='w-4 h-4' /> 
-                        <div>Report Abuse</div>
-                      </div>
-                      
-                      
-                    </div>
-                    
-                    <div className='flex flex-col gap-4 items-center justify-center bg-[#4D5160] px-3 py-5 rounded-lg mt-4'>
-                      <img src="/images/profile.jpg" alt="" className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover" />
-                      <div className='text-center flex flex-col items-center justify-center'>
-                        <div className="text-xl text-gray-100 font-semibold">Thomas Herzberg</div>
-                        <div className="flex items-center gap-1">
-                          <StarIcon className="h-3 w-3 text-yellow-500" />
-                          <div className='text-gray-100 text-sm'>4.9<span className="text-white/80">(255 reviews)</span></div>
+                      <div className="Service-provider px-4 py-4 lg:p-5 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base mt-7 border border-[#292C32]">
+                      <div className="flex items-center justify-between">
+                        <div className="text-2xl text-white text-left font-semibold h-font">Seller</div>
+                        <div className='text-[#FC323F] flex items-center gap-1 text-sm cursor-pointer px-3 py-[6px] rounded-lg border-colo'>
+                          <Flag className='w-4 h-4' /> 
+                          <div>Report Abuse</div>
                         </div>
                       </div>
-                    </div>
-                    <div className='mt-4'>
-                      <div className='flex flex-col gap-4'>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white/95'>
-                            <User className='w-4 h-4 text-white/80'/>
-                            <div className=''>Member Since</div>
-                          </div>
-                          <div className='text-white/80'>14 Apr 2023</div>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white/95'>
-                            <MapPinIcon className="h-4 w-4" />
-                            <div className=''>Address</div>
-                          </div>
-                          <div className='text-white/80'>Hanover, Maryland</div>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white/95'>
-                          <Mail className="h-4 w-4" />
-                            <div className=''>Email</div>
-                          </div>
-                          <div className='text-white/80'>Thomasxxx@exaample.com</div>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white/95'>
-                            <Phone className="h-4 w-4" />
-                            <div className=''>Phone</div>
-                          </div>
-                          <div className='text-white/80'>+1 888 8XX XXXX</div>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white'>
-                            <ScrollText className="h-4 w-4" />
-                            <div className=''>No of Listings</div>
-                          </div>
-                          <div className='text-white/80'>03</div>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                          <div className='flex gap-2 items-center text-white/95'>
-                            <div className=''>Social Profiles</div>
-                          </div>
-                          <div className='flex gap-2'>
-                            <a href="#" className="text-white hover:text-gray-200">
-                              <img className='w-6 h-6' src="/images/icons/socials/facebook.png" alt="" />
-                            </a>
-                            <a href="#" className="text-white hover:text-gray-200">
-                              <img className='w-6 h-6' src="/images/icons/socials/instagram.png" alt="" />
-                            </a>
-                            <a href="#" className="text-white hover:text-gray-200">
-                            <img className='w-6 h-6' src="/images/icons/socials/twitter.png" alt="" />
-                            </a>
-                            <a href="#" className="text-white hover:text-gray-200">
-                              <img className='w-6 h-6' src="/images/icons/socials/whatsapp.png" alt="" />
-                            </a>
-                            <a href="#" className="text-white hover:text-gray-200">
-                              <img className='w-6 h-6' src="/images/icons/socials/youtube.png" alt="" />
-                            </a>
-                            <a href="#" className="text-white hover:text-gray-200">
-                              <img className='w-6 h-6' src="/images/icons/socials/linkedin.png" alt="" />
-                            </a>
+                      
+                      <div className='flex flex-col gap-4 items-center justify-center bg-[#4D5160]/70 px-3 py-5 rounded-lg mt-4'>
+                        <img src="/images/profile.jpg" alt="" className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover" />
+                        <div className='text-center flex flex-col items-center justify-center'>
+                          <div className="text-xl text-gray-100 font-semibold">Thomas Herzberg</div>
+                          <div className="flex items-center gap-1">
+                            <StarIcon className="h-3 w-3 text-yellow-500" />
+                            <div className='text-gray-100 text-sm'>4.9<span className="text-white/80">(255 reviews)</span></div>
                           </div>
                         </div>
+                      </div>
+                      <div className='mt-4'>
+                        <div className='flex flex-col gap-4'>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white/95'>
+                              <User className='w-4 h-4 text-white/80'/>
+                              <div className=''>Member Since</div>
+                            </div>
+                            <div className='text-white/80'>14 Apr 2023</div>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white/95'>
+                              <MapPinIcon className="h-4 w-4" />
+                              <div className=''>Address</div>
+                            </div>
+                            <div className='text-white/80'>Hanover, Maryland</div>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white/95'>
+                            <Mail className="h-4 w-4" />
+                              <div className=''>Email</div>
+                            </div>
+                            <div className='text-white/80'>Thomasxxx@exaample.com</div>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white/95'>
+                              <Phone className="h-4 w-4" />
+                              <div className=''>Phone</div>
+                            </div>
+                            <div className='text-white/80'>+1 888 8XX XXXX</div>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white'>
+                              <ScrollText className="h-4 w-4" />
+                              <div className=''>No of Listings</div>
+                            </div>
+                            <div className='text-white/80'>03</div>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex gap-2 items-center text-white/95'>
+                              <div className=''>Social Profiles</div>
+                            </div>
+                            <div className='flex gap-2'>
+                              <a href="#" className="text-white hover:text-gray-200">
+                                <img className='w-6 h-6' src="/images/icons/socials/facebook.png" alt="" />
+                              </a>
+                              <a href="#" className="text-white hover:text-gray-200">
+                                <img className='w-6 h-6' src="/images/icons/socials/instagram.png" alt="" />
+                              </a>
+                              <a href="#" className="text-white hover:text-gray-200">
+                              <img className='w-6 h-6' src="/images/icons/socials/twitter.png" alt="" />
+                              </a>
+                              <a href="#" className="text-white hover:text-gray-200">
+                                <img className='w-6 h-6' src="/images/icons/socials/whatsapp.png" alt="" />
+                              </a>
+                              <a href="#" className="text-white hover:text-gray-200">
+                                <img className='w-6 h-6' src="/images/icons/socials/youtube.png" alt="" />
+                              </a>
+                              <a href="#" className="text-white hover:text-gray-200">
+                                <img className='w-6 h-6' src="/images/icons/socials/linkedin.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
 
+                        </div>
+                        <Separator className='bg-[#3f424a] mt-2' /> 
+                        <div className="grid grid-cols-2 gap-2 mt-4">
+                        <Button className='text-[#101218] bg-white hover:bg-white rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Contact Seller</Button>
+                        <Button className='text-[#101218] bg-[#ccd7de] hover:bg-[#ccd7de] rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Chat Now</Button>
+                        </div>
                       </div>
-                      <Separator className='bg-[#272A31] mt-2' /> 
-                      <div className="grid grid-cols-2 gap-2 mt-4">
-                      <Button className='text-[#101218] bg-white hover:bg-white rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Contact Seller</Button>
-                      <Button className='text-[#101218] bg-[#ccd7de] hover:bg-[#ccd7de] rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Chat Now</Button>
-                      </div>
-                    </div>
                   </div>
-                  <div className="warning px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-[15px]/6 mt-7 text-white border border-[#272A31]">
+                  <div className="warning px-4 lg:p-5 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-[15px]/6 mt-7 text-white border border-[#292C32]">
                     <div className="text-lg text-white font-semibold">⚠️ Important Notice</div>
                     <div className='mb-2 mt-1'>
                       For your safety, please do not make any payments directly to sellers before receiving your order. Always ensure that:
@@ -230,7 +232,7 @@ const SingleListing = () => {
                       <div>- You are satisfied with the quality and condition</div>
                       <div>- The transaction follows our platform’s guidelines</div>
                     </div>
-                    <Separator className='bg-[#272A31] mt-2' />
+                    <Separator className='bg-[#3f424a] mt-2' />
                     <div className='mt-2'>
                       We are not responsible for any disputes arising from payments made outside our platform. Stay safe and shop securely! 🚀
                     </div>

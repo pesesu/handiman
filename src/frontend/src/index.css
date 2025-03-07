@@ -117,6 +117,7 @@ body {
   font-family: "Archivo", sans-serif;
   /* font-family: "Inter", sans-serif; */
   background: #101218;
+  background: #0b0c10;
   overflow: auto;
 }
 
@@ -140,6 +141,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #4D5160;
   border-radius: 10px;
+}
+
+.border-color {
+  box-shadow: inset 0 0 0 1px #3f424a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -181,7 +186,7 @@ html {
   position: relative;
   padding: 10px;
   background:
-  linear-gradient(#40434f , #40434f) padding-box,
+  linear-gradient(#3a3c47 , #3a3c47) padding-box,
   linear-gradient(160deg, #46acfa 3%, #94cbf5 67%) border-box;
   border: 1px solid transparent;
 }

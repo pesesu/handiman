@@ -29,12 +29,12 @@ const SingleService = () => {
   return (
     <div>
         <Header />
-        <div className='mt-14'>
+        <div className='mt-16'>
             <BreadcrumbHero title='Service Details' subs={breadcrumbItems} />
         </div>
         <div className="content md:px-5 py-14">
-            <div className="grid gap-5 lg:grid-cols-[1fr_24rem]">
-              <div className="left px-3 lg:px-4 py-4 lg:py-6 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full border border-[#272A31]">
+            <div className="grid gap-5 lg:grid-cols-[1fr_22rem]">
+              <div className="left px-4 lg:p-5 py-4 lg:py-6 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full border border-[#292C32]">
                 <div className="name text-3xl font-semibold text-white mb-2">Lighting Services</div>
                 <div className="flex flex-col md:flex-row lg:flex-col gap-[10px]">
                   <div className="flex flex-col md:flex-row md:items-center gap-3">
@@ -68,23 +68,23 @@ const SingleService = () => {
                     </div>
                   </div>
                 </div>
-                <div className='py-6'>
+                <div className='py-6 max-w-3xl'>
                   <ImageGallerySlider />
                 </div>
-                <Separator className='bg-[#272A31]' /> 
+               
 
                 <div className="text-2xl text-white text-left font-semibold h-font mt-5">Overview</div>
 
-                <div className='text-[15px]/6 text-gray-100 mt-3'>
+                <div className='text-[15px]/6 text-gray-100 mt-3 max-w-3xl'>
                   Provides reliable and professional electrical solutions for residential and commercial clients. Our licensed electricians are dedicated to delivering top-quality service, ensuring safety, and meeting all your electrical needs. Committed to providing high-quality electrical solutions with a focus on safety and customer satisfaction. Our team of licensed electricians is equipped to handle both residential and commercial projects with expertise and care.
                 </div>
                 <br />
-                <div className='text-[15px/6 text-gray-100'>
+                <div className='text-[15px/6 text-gray-100 max-w-3xl'>
                   Comprehensive overview of Electrical Services, including the types of services offered, key benefits, location, contact details, special offers, and customer reviews.
                 </div>
                 
-                <div className='mt-5'>
-                  <div className="text-2xl text-white text-left font-semibold h-font">Features</div>
+                <div className='mt-10 max-w-3xl'>
+                  <div className="text-lg text-white text-left font-semibold h-font">Features</div>
                   <div className="attributes mt-5 border border-[#4D5160] rounded-lg">
                     <div className="flex flex-col">
                       <div className="-m-1.5 overflow-x-auto">
@@ -134,15 +134,15 @@ const SingleService = () => {
                   </div>
                 </div>
 
-                <div className="video mt-5">
-                  <div className="text-2xl text-white text-left font-semibold h-font ">Video</div>
+                <div className="video mt-10 max-w-3xl">
+                  <div className="text-lg text-white text-left font-semibold h-font ">Video</div>
                   <div className="mt-4">
                     <AppVideo />
                   </div>
                 </div>
 
-                <div className="faq mt-5">
-                  <div className="text-2xl text-white text-left font-semibold h-font">FAQ's</div>
+                <div className="faq mt-10 max-w-3xl">
+                  <div className="text-lg text-white text-left font-semibold h-font">FAQ's</div>
                   <div className="mt-4">
                     <Accordion type="single" collapsible className="w-full divide-[#4D5160]">
                       <AccordionItem value="item-1">
@@ -168,7 +168,7 @@ const SingleService = () => {
                   </div>
                 </div>
 
-                <div className="contact-us mt-5">
+                <div className="contact-us mt-10 max-w-3xl">
                   <ReviewSection />
                 </div>
                 
@@ -177,17 +177,17 @@ const SingleService = () => {
                 {/* <div ref={sidebarRef}> */}
                 <StickyBox offsetTop={68} offsetBottom={20} className="w-full">
                  <div>
-                  <div className="Service-provider px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base border border-[#272A31]">
+                  <div className="Service-provider px-4 lg:p-5 py-5 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base border border-[#292C32]">
                     {/* <div className="text-2xl text-white text-left font-semibold h-font">Service Actions</div> */}
-                    {/* <Separator className='bg-[#272A31] mt-2' />  */}
-                    <div className='flex flex-col gap-6'>
+                    {/* <Separator className='bg-[#3f424a] mt-2' />  */}
+                    <div className='flex flex-col gap-4'>
                       <Button className='text-white bg-[#0092FF] rounded-lg px-3 font-semibold w-full h-[44px]'><Phone className='w-4 h-4'/>Call Provider</Button>
                       <Button className='text-white bg-transparent border border-[#4D5160] rounded-lg px-3 font-semibold w-full h-[44px]'><Mail className='w-4 h-4' />Send Enquiry</Button>
                     </div>
                   </div>
-                  <div className="Service-provider px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base mt-7 border border-[#272A31]">
+                  <div className="Service-provider px-4 lg:p-5 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full text-base mt-7 border border-[#292C32]">
                     <div className="text-2xl text-white text-left font-semibold h-font">Service Provider</div>
-                    <div className='flex flex-col gap-4 items-center justify-center bg-[#4D5160] px-3 py-5 rounded-lg mt-4'>
+                    <div className='flex flex-col gap-4 items-center justify-center bg-[#4D5160]/70 px-3 py-5 rounded-lg mt-4'>
                       <img src="/images/profile.jpg" alt="" className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover" />
                       <div className='text-center flex flex-col items-center justify-center'>
                         <div className="text-xl text-gray-100 font-semibold">Thomas Herzberg</div>
@@ -261,7 +261,7 @@ const SingleService = () => {
                         </div>
 
                       </div>
-                      <Separator className='bg-[#272A31] mt-2' /> 
+                      <Separator className='bg-[#3f424a] mt-2' /> 
                       <div className="grid grid-cols-2 gap-2 mt-4">
                         <Button className='text-[#101218] bg-white hover:bg-white rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Contact Provider</Button>
                         <Button className='text-[#101218] bg-[#ccd7de] hover:bg-[#ccd7de] rounded-lg px-3 font-semibold w-full h-[44px]'><User className='w-4 h-4'/>Chat Now</Button>
@@ -269,7 +269,7 @@ const SingleService = () => {
                     </div>
                   </div>
 
-                  <div className="business-hours px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full mt-7 text-base border border-[#272A31]">
+                  <div className="business-hours px-4 lg:p-5 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full mt-7 text-base border border-[#292C32]">
                     <div className="text-2xl text-white text-left font-semibold h-font">Business Hours</div>
                     <div className='flex flex-col gap-4 mt-4'>
                       <div className='flex items-center justify-between'>
@@ -317,7 +317,7 @@ const SingleService = () => {
                     </div>
                   </div>
 
-                  <div className="location px-3 lg:px-4 py-4 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full mt-7 text-base border border-[#272A31]">
+                  <div className="location px-4 lg:p-5 py-4 lg:p-y-5 rounded-lg shadow-[0_0px_5px_rgba(9,11,12,.4)] w-full mt-7 text-base border border-[#292C32]">
                     <div className="text-2xl text-white text-left font-semibold h-font">Location</div>
                     <div className="mt-4">
                       <GoogleMapComponent />

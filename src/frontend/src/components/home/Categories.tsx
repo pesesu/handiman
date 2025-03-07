@@ -33,7 +33,7 @@ export default function App() {
   ];
 
   return (
-    <div className='home-categories px-3 md:px-5 py-12 bg-[#101218] shadow-xl shadow-[#212f3c] border-t border-[#4D5160]'>
+    <div className='home-categories px-3 md:px-5 py-12 border-t border-[#4D5160]'>
       <div className="flex items-center justify-between mb-10">
         <div className="text-xl text-white text-left font-semibold h-font">Top Categories</div>
         <Button className='text-xs text-[#0092FF] hover:text-[#101218] bg-transparent hover:bg-[#0092FF] border-[#0092FF] rounded-lg px-3 font-semibold' variant="outline">View All</Button>
@@ -90,7 +90,7 @@ export default function App() {
         >
           {categories.map((category, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center gap-3 px-4 md:px-5 py-6 bg-[#4D5160]/90 shadow gradient-border rounded-lg transition text-base text-white text-center h-[8.6rem]">
+              <div className="flex flex-col items-center gap-3 px-4 md:px-5 py-6 bg-[#4D5160]/20 shadow gradient-border rounded-lg transition text-base text-white text-center h-[8.6rem]">
                 <img className='h-[2.4rem] mt-6' src="/images/icons/food.png" alt="" />
                 {category}
               </div>

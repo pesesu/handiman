@@ -25,7 +25,7 @@ const ServiceDrawer: React.FC<ServiceDrawerProps> = ({isActive, setActiveDrawer}
   return (
     <>
     {
-        active && <div onMouseOver={() => setActiveDrawer('services')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-[#101218] shadow-lg hidden md:block">
+        active && <div onMouseOver={() => setActiveDrawer('services')} onMouseLeave={() => setActiveDrawer('')} className="service-drawer p-5 pb-8 w-full absolute z-[10] left-0 top-14 bg-[#0b0c10] shadow-lg hidden md:block">
 
             <div className="grid grid-cols-2 gap-2 max-w-5xl">
                 <div className='md:border-r md:border-gray-400 md:pr-5'>
@@ -39,7 +39,7 @@ const ServiceDrawer: React.FC<ServiceDrawerProps> = ({isActive, setActiveDrawer}
                     </div>
                 </div>
 
-                <div className='md:pl-5 max-h-[60vh] overflow-auto'>
+                <div className='md:pl-5 h-full max-h-[70vh] overflow-auto'>
                     <div className="grid md:grid-cols-2 gap-x-2 gap-y-6 text-sm font-medium mt-8">
                         {serviceCategories[activeIndex].subcategories.map((item, index) => {
                             return <a href='#'><div onClick={() => setSubCategory(item)} className='text-gray-200 hover:text-[#027CDA]' key={index} >{item}</div></a>

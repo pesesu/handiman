@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <>
         <Sidebar isOpen={showSidebar} setShowSidebar={setShowSidebar} />
-        <div className='h-14 px-4 md:px-5 flex items-center justify-between bg-[#101218] w-full fixed top-0 z-[10]'>
+        <div className='h-16 px-2 md:px-5 flex items-center justify-between bg-[#0b0c10] w-full fixed top-0 z-[10]'>
             <div className="left flex items-center gap-3">
                 <Menu onClick={() => setShowSidebar(true)} className='text-white' />
                 <div className="brand">
